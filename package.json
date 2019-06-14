@@ -8,7 +8,7 @@
     "postinstall": "lerna bootstrap --hoist",
     "pretest": "standard",
     "repo:fetch": "git remote add upstream https://github.com/Zaephor/nodejs-monorepo.git && git fetch upstream && git merge upstream/master && git remote remove upstream",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
