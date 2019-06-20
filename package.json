@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "batch-update": "lerna exec --parallel 'ncu -u'",
+    "batch-update": "ncu -u && lerna exec --parallel 'ncu -u' && npm install",
     "build:todo": "leasot -x --reporter markdown --ignore '**/node_modules/**,**.json' '**/*' > TODO.md && git add TODO.md",
     "commit": "commit",
     "postinstall": "lerna bootstrap --hoist",
@@ -19,9 +19,9 @@
     "husky": "latest",
     "leasot": "^7.4.0",
     "lerna": "^3.15.0",
-    "lint-staged": "^8.2.0",
+    "lint-staged": "^8.2.1",
     "mocha": "latest",
-    "npm-check-updates": "^3.1.10",
+    "npm-check-updates": "^3.1.11",
     "standard": "latest"
   },
   "standard": {
