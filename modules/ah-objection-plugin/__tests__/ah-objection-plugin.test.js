@@ -7,12 +7,12 @@ const ActionHero = require('actionhero')
 const actionhero = new ActionHero.Process()
 let api
 
-describe('ah-knex-plugin', () => {
+describe('ah-objection-plugin', () => {
   before(async () => {
     let configChanges = {
-      'ah-knex-plugin': { },
+      'ah-objection-plugin': { },
       plugins: {
-        'ah-knex-plugin': { path: path.join(__dirname, '..') }
+        'ah-objection-plugin': { path: path.join(__dirname, '..') }
       }
     }
     api = await actionhero.start({ configChanges })
