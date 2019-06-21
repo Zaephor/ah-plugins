@@ -1,3 +1,4 @@
+const path = require('path')
 exports['default'] = {
   plugins: (api) => {
     /*
@@ -22,6 +23,9 @@ exports['default'] = {
     }
     */
 
-    return {}
+    return {
+      'ah-knex-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-knex-plugin'), '..') },
+      'ah-objection-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-objection-plugin'), '..') }
+    }
   }
 }
