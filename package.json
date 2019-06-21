@@ -17,7 +17,7 @@
     "@commitlint/prompt-cli": "^8.0.0",
     "chai": "latest",
     "husky": "latest",
-    "leasot": "^7.4.0",
+    "leasot": "^7.5.0",
     "lerna": "^3.15.0",
     "lint-staged": "^8.2.1",
     "mocha": "latest",
