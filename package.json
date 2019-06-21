@@ -8,7 +8,7 @@
     "postinstall": "lerna bootstrap --hoist",
     "pretest": "standard",
     "repo:fetch": "git remote add upstream https://github.com/Zaephor/nodejs-monorepo.git && git fetch upstream && git merge upstream/master && git remote remove upstream",
-    "test": "lerna exec --parallel 'NODE_ENV=test mocha --exit ./__tests__/*.js'"
+    "test": "lerna exec --concurrency 1 'NODE_ENV=test mocha --colors --reporter spec --exit ./__tests__/*.js'"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
