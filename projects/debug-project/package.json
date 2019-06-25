@@ -10,20 +10,21 @@
   "dependencies": {
     "@zaephor-ah/ah-knex-plugin": "^0.1.0",
     "@zaephor-ah/ah-objection-plugin": "0.0.1",
+    "@zaephor-ah/ah-auth-plugin": "0.0.0",
     "actionhero": ">=19.1.4",
     "ioredis": "latest",
     "winston": "latest",
     "ws": "latest"
   },
   "devDependencies": {
-    "jest": "latest",
+    "mocha": "latest",
     "standard": "latest"
   },
   "scripts": {
     "start": "actionhero start",
     "actionhero": "actionhero",
     "pretest": "standard",
-    "test": "jest"
+    "test": "NODE_ENV=test mocha --colors --reporter spec --exit ./__tests__/*.js"
   },
   "standard": {
     "ignore": [

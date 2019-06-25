@@ -25,7 +25,8 @@ exports['default'] = {
 
     return {
       'ah-knex-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-knex-plugin'), '..') },
-      'ah-objection-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-objection-plugin'), '..') }
+      'ah-objection-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-objection-plugin'), '..') },
+      'ah-auth-plugin': { path: path.join(require.resolve('@zaephor-ah/ah-auth-plugin'), '..') }
     }
   }
 }
