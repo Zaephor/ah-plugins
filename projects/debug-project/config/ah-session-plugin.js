@@ -8,7 +8,7 @@ exports['default'] = {
       // Lifetime of user session before it goes stale. In seconds
       duration: 60 * 60 * 24 * 7, // 1 week
       // injectGlobal: true will set data.session to the contents of the current user's session, if no active session will return false
-      injectGlobal: false,
+      injectGlobal: true,
       // lockIp: true will restrict the specific user session to the origin IP.
       //  If they roam connections, they should need to relogin
       lockIp: false,
