@@ -20,9 +20,9 @@
     "husky": "latest",
     "leasot": "^7.5.0",
     "lerna": "^3.15.0",
-    "lint-staged": "^8.2.1",
+    "lint-staged": "^9.2.0",
     "mocha": "latest",
-    "npm-check-updates": "^3.1.12",
+    "npm-check-updates": "^3.1.18",
     "standard": "latest"
   },
   "standard": {
