@@ -6,7 +6,7 @@ const ActionHero = require('actionhero')
 const actionhero = new ActionHero.Process()
 let api
 
-describe('actionhero Tests', () => {
+describe('debug-project', () => {
   before(async () => { api = await actionhero.start() })
   after(async () => { await actionhero.stop() })
 
