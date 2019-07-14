@@ -9,7 +9,7 @@
     "pretest": "standard",
     "release": "lerna version",
     "repo:fetch": "git remote add upstream https://github.com/Zaephor/nodejs-monorepo.git && git fetch upstream && git merge upstream/master && git remote remove upstream",
-    "test": "lerna exec --concurrency 1 'NODE_ENV=test mocha --colors --reporter spec --exit ./__tests__/*.js'"
+    "test": "NODE_ENV=test mocha --colors --reporter spec --exit {modules,packages,projects}/*/__tests__/*.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
