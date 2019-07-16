@@ -12,10 +12,10 @@
     "test": "NODE_ENV=test mocha --colors --reporter spec --exit {modules,packages,projects}/*/__tests__/*.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
-    "@commitlint/config-lerna-scopes": "^8.0.0",
-    "@commitlint/prompt-cli": "^8.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/config-lerna-scopes": "^8.1.0",
+    "@commitlint/prompt-cli": "^8.1.0",
     "chai": "latest",
     "husky": "latest",
     "leasot": "^7.5.0",
